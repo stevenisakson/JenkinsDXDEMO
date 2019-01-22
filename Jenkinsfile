@@ -76,9 +76,9 @@ node {
           }
           stage('Deploy to Sandbox'){
               if (isUnix()) {
-                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME}"
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME} -p force-app"
               }else{
-                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME}"
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME} -p force-app"
               }
               
               if (rc != 0){
