@@ -89,7 +89,7 @@ node {
               if (isUnix()) {
                 rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant -i 3MVG9Nc1qcZ7BbZ1y5WZhKhMOdnPsjqsrJQhgBIAAMCZLAa04qB2rCNVFNwyurzgyUZsiJIMowv6UlF_bEwIK -u steven.isakson@slalom.com.cancdci -f ${jwt_key_file} -r https://test.salesforce.com"
                 }else{
-                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant -i 3MVG9Nc1qcZ7BbZ1y5WZhKhMOdnPsjqsrJQhgBIAAMCZLAa04qB2rCNVFNwyurzgyUZsiJIMowv6UlF_bEwIK -u steven.isakson@slalom.com.cancdci -f ${jwt_key_file} -r https://test.salesforce.com"
+                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant -i 3MVG9Nc1qcZ7BbZ1y5WZhKhMOdnPsjqsrJQhgBIAAMCZLAa04qB2rCNVFNwyurzgyUZsiJIMowv6UlF_bEwIK -u steven.isakson@slalom.com.cancdci -f \"${jwt_key_file}\" -r https://test.salesforce.com"
                 }
               if (isUnix()) {
                     rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u steven.isakson@slalom.com.cancdci -p force-app"
