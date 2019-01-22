@@ -1,0 +1,9 @@
+{
+    "orgName": "Cargill",
+    "edition": "Developer",
+    "features": ["MultiCurrency"],
+    "orgPreferences" : {
+        "enabled": ["S1DesktopEnabled"]
+    }
+}
+
