@@ -87,9 +87,14 @@ node {
           }
           stage('Deploy to Sandbox'){
               if (isUnix()) {
-                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME} -p force-app"
+                rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant --clientid 3MVG9Nc1qcZ7BbZ1y5WZhKhMOdnPsjqsrJQhgBIAAMCZLAa04qB2rCNVFNwyurzgyUZsiJIMowv6UlF_bEwIK --username steven.isakson@slalom.com.cancdci --jwtkeyfile ${jwt_key_file} --instanceurl test.salesforce.com"
+                }else{
+                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant --clientid 3MVG9Nc1qcZ7BbZ1y5WZhKhMOdnPsjqsrJQhgBIAAMCZLAa04qB2rCNVFNwyurzgyUZsiJIMowv6UlF_bEwIK --username steven.isakson@slalom.com.cancdci --jwtkeyfile ${jwt_key_file} --instanceurl test.salesforce.com"
+                }
+              if (isUnix()) {
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u steven.isakson@slalom.com.cancdci -p force-app"
               }else{
-                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME} -p force-app"
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u steven.isakson@slalom.com.cancdci -p force-app"
               }
               
               if (rc != 0){
