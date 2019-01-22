@@ -74,6 +74,23 @@ node {
                 error 'open failed'
             }
           }
+          stage('Deploy to Sandbox'){
+              if (isUnix()) {
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:convert -d deployDirectory"
+              }else{
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:source:convert -d deployDirectory"
+              }
+     
+                  if (isUnix()) {
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:mdapi:deploy -d deployDirectory -u ${DEV_USERNAME}"
+                  }else{
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:mdapi:deploy -d deployDirectory -u ${DEV_USERNAME}"
+                }
+              
+              if (rc != 0){
+                  error 'deployment failed'
+              }
+          }
              
     }
 }
