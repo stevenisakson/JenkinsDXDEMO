@@ -64,7 +64,7 @@ node {
             }
             
           }
-          stage('Open Scratch Org){
+          stage('Open Scratch Org'){
               if (isUnix()) {
                     rc = sh returnStatus: true, script: "\"${toolbelt}\" force:org:open --targetusername ${SFDC_USERNAME}"
               }else{
