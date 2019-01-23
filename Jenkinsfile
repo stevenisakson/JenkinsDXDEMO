@@ -107,9 +107,9 @@ node {
           }
           stage('Deploy to Sandbox'){
               if (isUnix()) {
-                rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant -i ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f ${jwt_key_file} -r ${SFDC_HOST_SANDBOX}"
+                rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant --clientid ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f ${jwt_key_file} -r ${SFDC_HOST_SANDBOX}"
                 }else{
-                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant -i ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f \"${jwt_key_file}\" -r ${SFDC_HOST_SANDBOX}"
+                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant --clientid ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f \"${jwt_key_file}\" -r ${SFDC_HOST_SANDBOX}"
                 }
               if (isUnix()) {
                     rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME} -p force-app"
