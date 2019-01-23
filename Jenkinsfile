@@ -97,9 +97,9 @@ node {
                   error 'install failed'
               }
               if (isUnix()) {
-                    rc = sh returnStatus: true, script: "\"${toolbelt}\" lightning:test:run -a jasmineTests.app -u ${SFDC_USERNAME}"
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:lightning:test:run -a jasmineTests.app -u ${SFDC_USERNAME}"
               }else{
-                  rc = bat returnStatus: true, script: "\"${toolbelt}\" lightning:test:run -a jasmineTests.app -u ${SFDC_USERNAME}"
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:lightning:test:run -a jasmineTests.app -u ${SFDC_USERNAME}"
               }
               if (rc != 0){
                   error 'tests failed'
