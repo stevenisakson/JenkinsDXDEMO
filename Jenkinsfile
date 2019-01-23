@@ -121,6 +121,13 @@ node {
                   error 'deployment failed'
               }
           }
+          stage('Delete Scratch Org'){
+               if (isUnix()) {
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:org:delete -u ${SFDC_USERNAME}"
+              }else{
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:org:delete -u ${SFDC_USERNAME}"
+              }
+          }
              
     }
 }
