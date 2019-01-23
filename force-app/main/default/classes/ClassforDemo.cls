@@ -5,5 +5,6 @@ public with sharing class ClassforDemo {
         System.debug('Test Debug 2');
         System.debug('Test Debug 4');
         System.debug('Test Debug 6');
+        System.debug('Test Debug 7');
     }
 }
