@@ -6,11 +6,14 @@ node {
     def RUN_ARTIFACT_DIR="tests/${BUILD_NUMBER}"
     def SFDC_USERNAME
     def DEV_USERNAME = "cargillDevSandbox"
+    def SANDBOX_CONSUMER_KEY
 
     def HUB_ORG=env.HUB_ORG_DH
     def SFDC_HOST = env.SFDC_HOST_DH
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
+    def SANDBOX_CONSUMER_KEY = env.SANDBOX_CONSUMER_KEY
+    def SFDC_HOST_SANDBOX = env.SFDC_HOST_SANDBOX_DH
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
     def toolbelt = tool 'toolbelt'
@@ -87,14 +90,14 @@ node {
           }
           stage('Deploy to Sandbox'){
               if (isUnix()) {
-                rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant -i 3MVG9Nc1qcZ7BbZ1y5WZhKhMOdnPsjqsrJQhgBIAAMCZLAa04qB2rCNVFNwyurzgyUZsiJIMowv6UlF_bEwIK -u steven.isakson@slalom.com.cancdci -f ${jwt_key_file} -r https://test.salesforce.com"
+                rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant -i ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f ${jwt_key_file} -r ${SFDC_HOST_SANDBOX}"
                 }else{
-                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant -i 3MVG9Nc1qcZ7BbZ1y5WZhKhMOdnPsjqsrJQhgBIAAMCZLAa04qB2rCNVFNwyurzgyUZsiJIMowv6UlF_bEwIK -u steven.isakson@slalom.com.cancdci -f \"${jwt_key_file}\" -r https://test.salesforce.com"
+                 rc = bat returnStatus: true, script: "\"${toolbelt}\" force:auth:jwt:grant -i ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f \"${jwt_key_file}\" -r ${SFDC_HOST_SANDBOX}"
                 }
               if (isUnix()) {
-                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u steven.isakson@slalom.com.cancdci -p force-app"
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME} -p force-app"
               }else{
-                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u steven.isakson@slalom.com.cancdci -p force-app"
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:source:deploy -u ${DEV_USERNAME} -p force-app"
               }
               
               if (rc != 0){
