@@ -5,8 +5,7 @@ node {
     def BUILD_NUMBER=env.BUILD_NUMBER
     def RUN_ARTIFACT_DIR="tests/${BUILD_NUMBER}"
     def SFDC_USERNAME
-    def DEV_USERNAME = "cargillDevSandbox"
-    def SANDBOX_CONSUMER_KEY
+    def DEV_USERNAME = env.DEV_USERNAME
 
     def HUB_ORG=env.HUB_ORG_DH
     def SFDC_HOST = env.SFDC_HOST_DH
