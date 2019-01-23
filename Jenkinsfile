@@ -87,6 +87,24 @@ node {
                 error 'open failed'
             }
           }
+          stage('Run LTS UI Tests'){
+              if (isUnix()) {
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" force:lightning:test:install -u ${SFDC_USERNAME}"
+              }else{
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:lightning:test:install -u ${SFDC_USERNAME}"
+              }
+              if (rc != 0){
+                  error 'install failed'
+              }
+              if (isUnix()) {
+                    rc = sh returnStatus: true, script: "\"${toolbelt}\" lightning:test:run -a jasmineTests.app -u ${SFDC_USERNAME}"
+              }else{
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" lightning:test:run -a jasmineTests.app -u ${SFDC_USERNAME}"
+              }
+              if (rc != 0){
+                  error 'tests failed'
+              }
+          }
           stage('Deploy to Sandbox'){
               if (isUnix()) {
                 rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant -i ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f ${jwt_key_file} -r ${SFDC_HOST_SANDBOX}"
