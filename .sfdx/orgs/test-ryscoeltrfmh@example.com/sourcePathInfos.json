@@ -50,7 +50,7 @@
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1548430104286,
+            "modifiedTime": 1548430746117,
             "changeTime": 1548430104286,
             "contentHash": "e3e958919ee873fba81bfa6ea5f52119ee7ee471",
             "isMetadataFile": false,
@@ -126,10 +126,10 @@
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\DXTestClass.cls",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 117,
-            "modifiedTime": 1548430746117,
-            "changeTime": 1548430746117,
-            "contentHash": "96dcce1fdd236302116af4fd26841ace8618ee72"
+            "size": 142,
+            "modifiedTime": 1548442732725,
+            "changeTime": 1548442732725,
+            "contentHash": "88057d1c212405ad4630f895491b7e3a4c6b893a"
         }
     ],
     [
