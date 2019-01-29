@@ -1,5 +1,6 @@
 #!groovy
 import groovy.json.JsonSlurperClassic
+pipeline{
 node {
 
     def BUILD_NUMBER=env.BUILD_NUMBER
@@ -133,4 +134,5 @@ node {
           }
              
     }
+}
 }
