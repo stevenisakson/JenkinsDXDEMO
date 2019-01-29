@@ -1,6 +1,5 @@
 #!groovy
 import groovy.json.JsonSlurperClassic
-pipeline{
 node {
 
     def BUILD_NUMBER=env.BUILD_NUMBER
@@ -17,8 +16,6 @@ node {
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
     def toolbelt = tool 'toolbelt'
-    
-    triggers { pollSCM('H */5 * * *') }
     
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
@@ -135,4 +132,4 @@ node {
              
     }
 }
-}
+
