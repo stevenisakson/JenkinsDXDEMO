@@ -2,7 +2,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app",
             "isDirectory": true,
             "isMetadataFile": false,
@@ -17,7 +17,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main",
             "isDirectory": true,
             "isMetadataFile": false,
@@ -32,13 +32,13 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default",
             "isDirectory": true,
             "isMetadataFile": false,
             "size": 0,
-            "modifiedTime": 1548342797189,
-            "changeTime": 1548342797189,
+            "modifiedTime": 1548448849566,
+            "changeTime": 1548448849566,
             "contentHash": "e2d89b987499dcbf5ac3fad3c6b81c9eff9aa302",
             "isWorkspace": false,
             "isArtifactRoot": false
@@ -47,13 +47,13 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes",
             "isDirectory": true,
             "isMetadataFile": false,
             "size": 0,
-            "modifiedTime": 1548430746117,
-            "changeTime": 1548430746117,
+            "modifiedTime": 1548447128984,
+            "changeTime": 1548447128984,
             "contentHash": "e3e958919ee873fba81bfa6ea5f52119ee7ee471",
             "isWorkspace": false,
             "isArtifactRoot": false
@@ -62,14 +62,14 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\ApexClassforThursdayDemo.cls",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\ApexClassforThursdayDemo.cls",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 178,
-            "modifiedTime": 1548430111524,
-            "changeTime": 1548430111524,
-            "contentHash": "41d01927345c549ffd41421572dfe5086c944040",
+            "size": 204,
+            "modifiedTime": 1548769743430,
+            "changeTime": 1548769743430,
+            "contentHash": "194e7daa79d5855923d14df2cd5dccf2752b77dd",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -77,7 +77,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\ApexClassforThursdayDemo.cls-meta.xml",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\ApexClassforThursdayDemo.cls-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
@@ -92,7 +92,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\ClassforDemo.cls",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\ClassforDemo.cls",
             "isDirectory": false,
             "isMetadataFile": false,
@@ -107,7 +107,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\ClassforDemo.cls-meta.xml",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\ClassforDemo.cls-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
@@ -122,14 +122,14 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\DXTestClass.cls",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\DXTestClass.cls",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 142,
-            "modifiedTime": 1548442732725,
-            "changeTime": 1548442732725,
-            "contentHash": "88057d1c212405ad4630f895491b7e3a4c6b893a",
+            "size": 148,
+            "modifiedTime": 1548447128985,
+            "changeTime": 1548447128985,
+            "contentHash": "d7fe5dd32bd2b82bec9f2be47b910bff51ab2182",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -137,7 +137,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\DXTestClass.cls-meta.xml",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\classes\\DXTestClass.cls-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
@@ -152,14 +152,29 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\layouts",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\layouts",
             "isDirectory": true,
             "isMetadataFile": false,
             "size": 0,
-            "modifiedTime": 1548342797188,
-            "changeTime": 1548342797188,
-            "contentHash": "9ab893f05a2b5bad9bc0d958c0a21fcfcc86d7d2",
+            "modifiedTime": 1548448828958,
+            "changeTime": 1548448828958,
+            "contentHash": "665c3c148af92c9a681e2a5d0dafdff2cfe04d8a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\layouts\\Test_Custom_Object_for_Demo__c-Test Custom Object for Demo Layout.layout-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\layouts\\Test_Custom_Object_for_Demo__c-Test Custom Object for Demo Layout.layout-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 2089,
+            "modifiedTime": 1548448828960,
+            "changeTime": 1548448828960,
+            "contentHash": "b5aa2c1da674251004b3fcf2e46e2c82df2c0937",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -167,7 +182,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\layouts\\Test_DX_Object__c-Test DX Object Layout.layout-meta.xml",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\layouts\\Test_DX_Object__c-Test DX Object Layout.layout-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
@@ -182,14 +197,44 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects",
             "isDirectory": true,
             "isMetadataFile": false,
             "size": 0,
-            "modifiedTime": 1548342797190,
-            "changeTime": 1548342797190,
-            "contentHash": "747141f2b093c896346461ca4bf7862ab3db2b0a",
+            "modifiedTime": 1548448828951,
+            "changeTime": 1548448828951,
+            "contentHash": "9daecb7d4df6d3c9b97acf444d3938690b7a08c1",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_Custom_Object_for_Demo__c",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_Custom_Object_for_Demo__c",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1548448828954,
+            "changeTime": 1548448828954,
+            "contentHash": "57876821b7bd33367558d6e613bc0bf7638f3234",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_Custom_Object_for_Demo__c\\Test_Custom_Object_for_Demo__c.object-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_Custom_Object_for_Demo__c\\Test_Custom_Object_for_Demo__c.object-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 2075,
+            "modifiedTime": 1548448828955,
+            "changeTime": 1548448828955,
+            "contentHash": "8ad7db6e0c14d79856ebe7d86e7d45b8255988cd",
             "isWorkspace": false,
             "isArtifactRoot": false
         }
@@ -197,7 +242,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c",
             "isDirectory": true,
             "isMetadataFile": false,
@@ -212,7 +257,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c\\fields",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c\\fields",
             "isDirectory": true,
             "isMetadataFile": false,
@@ -227,7 +272,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c\\fields\\Test_Checkbox__c.field-meta.xml",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c\\fields\\Test_Checkbox__c.field-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
@@ -242,7 +287,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c\\fields\\Test_DX_Field__c.field-meta.xml",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c\\fields\\Test_DX_Field__c.field-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
@@ -257,7 +302,7 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c\\Test_DX_Object__c.object-meta.xml",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO\\force-app\\main\\default\\objects\\Test_DX_Object__c\\Test_DX_Object__c.object-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
@@ -272,13 +317,13 @@
     [
         "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO",
         {
-            "state": "n",
+            "state": "u",
             "sourcePath": "C:\\Users\\steven.isakson\\DX Workspaces\\JenkinsDXDEMO",
             "isDirectory": true,
             "isMetadataFile": false,
             "size": 0,
-            "modifiedTime": 1548342797193,
-            "changeTime": 1548342833963,
+            "modifiedTime": 1548769733295,
+            "changeTime": 1548769733295,
             "contentHash": "26d0c096328f96e3026f6031e140c63afa92be39",
             "isWorkspace": true,
             "isArtifactRoot": false
