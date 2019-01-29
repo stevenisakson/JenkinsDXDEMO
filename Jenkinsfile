@@ -77,7 +77,7 @@ node {
             }
             
           }
-          /*stage('Open Scratch Org'){
+          stage('Open Scratch Org'){
               if (isUnix()) {
                     rc = sh returnStatus: true, script: "\"${toolbelt}\" force:org:open --targetusername ${SFDC_USERNAME}"
               }else{
@@ -86,7 +86,7 @@ node {
             if (rc != 0) {
                 error 'open failed'
             }
-          }*/
+          }
           /*
           stage('Run LTS UI Tests'){
               if (isUnix()) {
@@ -106,7 +106,7 @@ node {
                   error 'tests failed'
               }
           }*/
-          stage('Deploy to Sandbox'){
+          /*stage('Deploy to Sandbox'){
               if (isUnix()) {
                 rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant --clientid ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f ${jwt_key_file} -r ${SFDC_HOST_SANDBOX}"
                 }else{
@@ -121,14 +121,14 @@ node {
               if (rc != 0){
                   error 'deployment failed'
               }
-          }
-          /*stage('Delete Scratch Org'){
+          }*/
+          stage('Delete Scratch Org'){
                if (isUnix()) {
                     rc = sh returnStatus: true, script: "\"${toolbelt}\" force:org:delete -u ${SFDC_USERNAME}"
               }else{
                   rc = bat returnStatus: true, script: "\"${toolbelt}\" force:org:delete -u ${SFDC_USERNAME}"
               }
-          }*/
+          }
              
     }
 }
