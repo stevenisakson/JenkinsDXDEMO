@@ -87,7 +87,7 @@ node {
                 error 'open failed'
             }
           }
-          /*
+          
           stage('Run LTS UI Tests'){
               if (isUnix()) {
                     rc = sh returnStatus: true, script: "\"${toolbelt}\" force:lightning:test:install -u ${SFDC_USERNAME}"
@@ -105,7 +105,7 @@ node {
               if (rc != 0){
                   error 'tests failed'
               }
-          }*/
+          }
           stage('Deploy to Sandbox'){
               if (isUnix()) {
                 rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant --clientid ${SANDBOX_CONSUMER_KEY} -u ${DEV_USERNAME} -f ${jwt_key_file} -r ${SFDC_HOST_SANDBOX}"
