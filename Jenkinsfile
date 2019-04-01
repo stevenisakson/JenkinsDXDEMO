@@ -31,6 +31,9 @@ node {
             if (rc != 0) {
                 error 'upgrade failed'
             }
+            if (env.BRANCH_NAME == 'master'){
+                 println('Master Branch')   
+            }    
             
           }
         stage('Create Scratch Org') {
