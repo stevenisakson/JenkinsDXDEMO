@@ -24,9 +24,9 @@ node {
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Update CLI') {
               if (isUnix()) {
-                    rc = sh returnStatus: true, script: "\"${toolbelt}\" update"
+                    //rc = sh returnStatus: true, script: "\"${toolbelt}\" update"
               }else{
-                  rc = bat returnStatus: true, script: "\"${toolbelt}\" update"
+                  //rc = bat returnStatus: true, script: "\"${toolbelt}\" update"
               }
             if (rc != 0) {
                 error 'upgrade failed'
